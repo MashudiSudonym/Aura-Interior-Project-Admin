@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Aura Interior Project Admin</string>
+    <string name="key_maps" translatable="false">AIzaSyCy_DhxB1vF-WvHSYlOydmi19MD82nK9gM</string>
+    <string name="add">Tambah Pemesanan Baru</string>
+    <string name="maps">Peta</string>
+    <string name="no_data">No Data</string>
+    <string name="name">Nama</string>
+    <string name="phone">Telepon</string>
+    <string name="address">Alamat</string>
+    <string name="latitude">Koordinat Pemesan (Latitude)</string>
+    <string name="longitude">Koordinat Pemesan (Longitude)</string>
+    <string name="type">Tipe Wallpaper yang dipesan</string>
+    <string name="save">Simpan</string>
+    <string name="title_add">Tambah Data Pemesan</string>
+    <string name="cluster_title">Pemetaan Lokasi Pembeli</string>
+    <string name="location">Lokasi</string>
+    <string name="detail_title">Detail Informasi Pemesan</string>
+</resources>
