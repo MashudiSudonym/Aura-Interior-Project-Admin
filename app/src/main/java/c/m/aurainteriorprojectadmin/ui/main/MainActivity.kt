@@ -7,7 +7,7 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import c.m.aurainteriorprojectadmin.R
-import c.m.aurainteriorprojectadmin.model.CustomerResponse
+import c.m.aurainteriorprojectadmin.model.OrderResponse
 import c.m.aurainteriorprojectadmin.ui.add.AddActivity
 import c.m.aurainteriorprojectadmin.ui.cluster.ClusterActivity
 import c.m.aurainteriorprojectadmin.ui.detail.DetailActivity
@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity(), MainView {
 
     private lateinit var presenter: MainPresenter
     private lateinit var mainAdapter: MainAdapter
-    private val contentData: MutableList<CustomerResponse> = mutableListOf()
+    private val contentData: MutableList<OrderResponse> = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,12 +46,12 @@ class MainActivity : AppCompatActivity(), MainView {
         permissionDevice()
 
         // get wallpaper data
-        presenter.getCustomer()
+        presenter.getOrder()
 
         // refresh data
         swipe_refresh_main.setOnRefreshListener {
             swipe_refresh_main.isRefreshing = false
-            presenter.getCustomer()
+            presenter.getOrder()
         }
 
         // setup recycler view
@@ -106,7 +106,7 @@ class MainActivity : AppCompatActivity(), MainView {
         rv_order.gone()
     }
 
-    override fun getCustomer(customerData: List<CustomerResponse>) {
+    override fun getOrders(customerData: List<OrderResponse>) {
         contentData.clear()
         contentData.addAll(customerData)
         mainAdapter.notifyDataSetChanged()

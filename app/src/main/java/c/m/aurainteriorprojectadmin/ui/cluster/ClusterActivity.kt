@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import c.m.aurainteriorprojectadmin.R
-import c.m.aurainteriorprojectadmin.model.CustomerResponse
+import c.m.aurainteriorprojectadmin.model.OrderResponse
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.model.CameraPosition
@@ -24,7 +24,7 @@ import kotlinx.android.synthetic.main.activity_cluster.*
 class ClusterActivity : AppCompatActivity(), ClusterView {
 
     private lateinit var presenter: ClusterPresenter
-    private var content: MutableList<CustomerResponse> = mutableListOf()
+    private var content: MutableList<OrderResponse> = mutableListOf()
     private var gpsLatitude: Double? = 0.0
     private var gpsLongitude: Double? = 0.0
     private lateinit var locationManager: LocationManager
@@ -131,7 +131,7 @@ class ClusterActivity : AppCompatActivity(), ClusterView {
         super.onLowMemory()
     }
 
-    override fun getCustomer(customerData: List<CustomerResponse>) {
+    override fun getCustomer(customerData: List<OrderResponse>) {
         content.clear()
         content.addAll(customerData)
     }

@@ -1,8 +1,7 @@
 package c.m.aurainteriorprojectadmin.ui.cluster
 
 import android.util.Log
-import c.m.aurainteriorprojectadmin.model.CustomerResponse
-import c.m.aurainteriorprojectadmin.ui.main.MainView
+import c.m.aurainteriorprojectadmin.model.OrderResponse
 import c.m.aurainteriorprojectadmin.util.base.BasePresenter
 import com.google.firebase.database.*
 
@@ -31,10 +30,10 @@ class ClusterPresenter : BasePresenter<ClusterView> {
 
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                     val customerData = dataSnapshot.children.flatMap {
-                        mutableListOf(it.getValue(CustomerResponse::class.java))
+                        mutableListOf(it.getValue(OrderResponse::class.java))
                     }
 
-                    clusterView?.getCustomer(customerData as List<CustomerResponse>)
+                    clusterView?.getCustomer(customerData as List<OrderResponse>)
                 }
             })
     }

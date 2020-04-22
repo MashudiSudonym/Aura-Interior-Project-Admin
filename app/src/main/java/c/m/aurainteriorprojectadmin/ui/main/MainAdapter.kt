@@ -5,13 +5,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import c.m.aurainteriorprojectadmin.R
-import c.m.aurainteriorprojectadmin.model.CustomerResponse
+import c.m.aurainteriorprojectadmin.model.OrderResponse
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.item_order.*
 
 class MainAdapter(
-    private val content: List<CustomerResponse>,
-    private val onClickListener: (CustomerResponse) -> Unit
+    private val content: List<OrderResponse>,
+    private val onClickListener: (OrderResponse) -> Unit
 ) :
     RecyclerView.Adapter<MainAdapter.MainViewHolder>() {
 
@@ -27,10 +27,11 @@ class MainAdapter(
 
     class MainViewHolder(override val containerView: View) :
         RecyclerView.ViewHolder(containerView), LayoutContainer {
-        fun bind(content: CustomerResponse, onClickListener: (CustomerResponse) -> Unit) {
+        fun bind(content: OrderResponse, onClickListener: (OrderResponse) -> Unit) {
             item_order_layout.setOnClickListener { onClickListener(content) }
             tv_name.text = content.name
-            tv_phone.text = content.phone
+            tv_date.text = content.orderDate
+            tv_type_wallpaper.text = content.typeWallpaperOrder
         }
     }
 }

@@ -1,7 +1,7 @@
 package c.m.aurainteriorprojectadmin.ui.add
 
 import android.util.Log
-import c.m.aurainteriorprojectadmin.model.CustomerResponse
+import c.m.aurainteriorprojectadmin.model.OrderResponse
 import c.m.aurainteriorprojectadmin.util.base.BasePresenter
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -31,7 +31,7 @@ class AddPresenter : BasePresenter<AddView> {
         type: String
     ) {
         val uid = databaseReference.child("customers").push().key
-        val customerData = CustomerResponse(uid, name, address, phone, latitude, longitude, type)
+        val customerData = OrderResponse(uid, name, address, phone, latitude, longitude, type)
 
         databaseReference.child("customers")
             .child(uid.toString())

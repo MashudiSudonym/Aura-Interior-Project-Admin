@@ -15,4 +15,6 @@
     <string name="cluster_title">Pemetaan Lokasi Pembeli</string>
     <string name="location">Lokasi</string>
     <string name="detail_title">Detail Informasi Pemesan</string>
+    <string name="date">Tanggal Order</string>
+    <string name="type_wallpaper">tipe wallpaper</string>
 </resources>
