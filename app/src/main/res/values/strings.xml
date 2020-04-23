@@ -17,4 +17,18 @@
     <string name="detail_title">Detail Informasi Pemesan</string>
     <string name="date">Tanggal Order</string>
     <string name="type_wallpaper">tipe wallpaper</string>
+    <string name="customer_name">Nama</string>
+    <string name="address_customer">Alamat</string>
+    <string name="phone_customer">Nomor Telepon</string>
+    <string name="type_wallpaper_customer">Tipe Wallpaper yang dipesan</string>
+    <string name="order_status">Status Pesanan\n(Klik untuk mengubah status pesanan)</string>
+    <string name="roll_estimation_customer">Perkiraan Jumlah Roll Wallpaper yang diterima</string>
+    <string name="price_estimation_customer">Perkiraan Total Biaya yang Harus Dibayarkan</string>
+    <string name="order_date">Tanggal Pemesanan</string>
+    <string name="waiting_status">Menunggu</string>
+    <string name="order_accept_status">Pesanan Diterima</string>
+    <string name="order_cancel_status">Pesanan Dibatalkan</string>
+    <string name="alert_title_order_status">Pilih Status Pesanan :</string>
+    <string name="ok">Oke</string>
+    <string name="your_order_status">Status Pesanan Anda</string>
 </resources>
