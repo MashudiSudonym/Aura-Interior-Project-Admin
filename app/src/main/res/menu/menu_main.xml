@@ -10,5 +10,13 @@
     <item
         android:id="@+id/menu_add"
         android:icon="@drawable/ic_add"
-        android:title="@string/add" />
+        android:title="@string/add_wallpaper" />
+    <item
+        android:id="@+id/menu_list_wallpaper"
+        android:icon="@drawable/ic_view_list"
+        android:title="@string/list_wallpaper" />
+    <item
+        android:id="@+id/menu_export_report"
+        android:icon="@drawable/ic_picture_as_pdf"
+        android:title="@string/export_report" />
 </menu>

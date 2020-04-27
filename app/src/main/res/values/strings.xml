@@ -31,4 +31,7 @@
     <string name="alert_title_order_status">Pilih Status Pesanan :</string>
     <string name="ok">Oke</string>
     <string name="your_order_status">Status Pesanan Anda</string>
+    <string name="add_wallpaper">Tambah Wallpaper</string>
+    <string name="list_wallpaper">Daftar Wallpaper</string>
+    <string name="export_report">Ekspor Laporan</string>
 </resources>

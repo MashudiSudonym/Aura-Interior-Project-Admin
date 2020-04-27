@@ -31,7 +31,6 @@
         <activity android:name=".ui.map.MapActivity" />
         <activity android:name=".ui.cluster.ClusterActivity" />
         <activity android:name=".ui.detail.DetailActivity" />
-        <activity android:name=".ui.add.AddActivity" />
 
         <meta-data
             android:name="com.google.android.gms.version"
