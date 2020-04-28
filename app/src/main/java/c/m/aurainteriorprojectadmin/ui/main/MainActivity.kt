@@ -11,6 +11,7 @@ import c.m.aurainteriorprojectadmin.R
 import c.m.aurainteriorprojectadmin.database.database
 import c.m.aurainteriorprojectadmin.model.OrderResponse
 import c.m.aurainteriorprojectadmin.model.OrderSqlite
+import c.m.aurainteriorprojectadmin.ui.addproduct.AddProductActivity
 import c.m.aurainteriorprojectadmin.ui.cluster.ClusterActivity
 import c.m.aurainteriorprojectadmin.ui.detail.DetailActivity
 import c.m.aurainteriorprojectadmin.util.Constants
@@ -185,7 +186,7 @@ class MainActivity : AppCompatActivity(), MainView {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.menu_add -> {
-                //startActivity<AddActivity>()
+                startActivity<AddProductActivity>()
                 true
             }
             R.id.menu_list_wallpaper -> {

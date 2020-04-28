@@ -28,6 +28,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
+        <activity android:name=".ui.addproduct.AddProductActivity"></activity>
         <activity android:name=".ui.map.MapActivity" />
         <activity android:name=".ui.cluster.ClusterActivity" />
         <activity android:name=".ui.detail.DetailActivity" />
