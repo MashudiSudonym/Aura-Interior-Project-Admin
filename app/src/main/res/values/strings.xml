@@ -44,4 +44,5 @@
     <string name="alert">Peringatan!!</string>
     <string name="check_data_message">Apakah data yang dimasukkan sudah benar?</string>
     <string name="warning">Perhatian</string>
+    <string name="wallpaper_list">Daftar Wallpaper</string>
 </resources>

@@ -14,6 +14,7 @@ import c.m.aurainteriorprojectadmin.model.OrderSqlite
 import c.m.aurainteriorprojectadmin.ui.addproduct.AddProductActivity
 import c.m.aurainteriorprojectadmin.ui.cluster.ClusterActivity
 import c.m.aurainteriorprojectadmin.ui.detail.DetailActivity
+import c.m.aurainteriorprojectadmin.ui.product.ProductActivity
 import c.m.aurainteriorprojectadmin.util.Constants
 import c.m.aurainteriorprojectadmin.util.gone
 import c.m.aurainteriorprojectadmin.util.visible
@@ -190,6 +191,7 @@ class MainActivity : AppCompatActivity(), MainView {
                 true
             }
             R.id.menu_list_wallpaper -> {
+                startActivity<ProductActivity>()
                 true
             }
             R.id.menu_export_report -> {
