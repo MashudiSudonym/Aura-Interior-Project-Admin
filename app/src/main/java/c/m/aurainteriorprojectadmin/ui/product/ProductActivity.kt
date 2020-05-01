@@ -4,9 +4,12 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import c.m.aurainteriorprojectadmin.R
 import c.m.aurainteriorprojectadmin.model.WallpaperResponse
+import c.m.aurainteriorprojectadmin.ui.detailproduct.DetailProductActivity
+import c.m.aurainteriorprojectadmin.util.Constants
 import c.m.aurainteriorprojectadmin.util.gone
 import c.m.aurainteriorprojectadmin.util.visible
 import kotlinx.android.synthetic.main.activity_product.*
+import org.jetbrains.anko.startActivity
 
 class ProductActivity : AppCompatActivity(), ProductView {
 
@@ -84,7 +87,11 @@ class ProductActivity : AppCompatActivity(), ProductView {
 
     private fun setupRecyclerView() {
         productAdapter = ProductAdapter(content) { response ->
-            //startActivity<DetailActivity>(Constants.UID to response.uid)
+            startActivity<DetailProductActivity>(
+                Constants.UID to response.uid,
+                Constants.IMAGE to response.imageWallpaper,
+                Constants.TYPE to response.type
+            )
         }
         rv_wallpaper.setHasFixedSize(true)
         rv_wallpaper.adapter = productAdapter

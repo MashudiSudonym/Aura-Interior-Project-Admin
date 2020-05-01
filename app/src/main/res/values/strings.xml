@@ -17,6 +17,7 @@
     <string name="detail_title">Detail Informasi Pemesan</string>
     <string name="date">Tanggal Order</string>
     <string name="type_wallpaper">tipe wallpaper</string>
+    <string name="type_wallpaper_new">tipe wallpaper\n(klik untuk mengubah nama)</string>
     <string name="customer_name">Nama</string>
     <string name="address_customer">Alamat</string>
     <string name="phone_customer">Nomor Telepon</string>
@@ -45,4 +46,7 @@
     <string name="check_data_message">Apakah data yang dimasukkan sudah benar?</string>
     <string name="warning">Perhatian</string>
     <string name="wallpaper_list">Daftar Wallpaper</string>
+    <string name="change_image">Ganti Gambar</string>
+    <string name="delete">Hapus</string>
+    <string name="detail_product">Detail Produk</string>
 </resources>

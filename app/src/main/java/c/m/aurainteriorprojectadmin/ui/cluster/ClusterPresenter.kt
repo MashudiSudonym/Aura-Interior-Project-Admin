@@ -5,6 +5,7 @@ import c.m.aurainteriorprojectadmin.model.OrderResponse
 import c.m.aurainteriorprojectadmin.util.base.BasePresenter
 import com.google.firebase.database.*
 
+@Suppress("UNCHECKED_CAST")
 class ClusterPresenter : BasePresenter<ClusterView> {
     private var clusterView: ClusterView? = null
     private lateinit var databaseReference: DatabaseReference
@@ -21,19 +22,19 @@ class ClusterPresenter : BasePresenter<ClusterView> {
         databaseReference = FirebaseDatabase.getInstance().reference
     }
 
-    fun getCustomer() {
-        databaseReference.child("customers")
+    fun getOrder() {
+        databaseReference.child("orders")
             .addValueEventListener(object : ValueEventListener {
                 override fun onCancelled(databaseError: DatabaseError) {
                     Log.e("Err!!", "Load Error : $databaseError", databaseError.toException())
                 }
 
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
-                    val customerData = dataSnapshot.children.flatMap {
+                    val orderData = dataSnapshot.children.flatMap {
                         mutableListOf(it.getValue(OrderResponse::class.java))
                     }
 
-                    clusterView?.getCustomer(customerData as List<OrderResponse>)
+                    clusterView?.getCustomer(orderData as List<OrderResponse>)
                 }
             })
     }

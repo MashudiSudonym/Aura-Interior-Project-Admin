@@ -50,7 +50,7 @@ class ClusterActivity : AppCompatActivity(), ClusterView {
     override fun onAttachView() {
         presenter.onAttach(this)
         presenter.firebaseInit()
-        presenter.getCustomer()
+        presenter.getOrder()
 
         supportActionBar?.apply {
             title = getString(R.string.cluster_title)
