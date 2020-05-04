@@ -34,7 +34,6 @@
     <string name="your_order_status">Status Pesanan Anda</string>
     <string name="add_wallpaper">Tambah Wallpaper</string>
     <string name="list_wallpaper">Daftar Wallpaper</string>
-    <string name="export_report">Ekspor Laporan</string>
     <string name="select_image">Pilih Gambar</string>
     <string name="add_product">Tambah Produk</string>
     <string name="take_or_choose">Pilih Gambar dari Galeri atau Kamera</string>
@@ -49,4 +48,9 @@
     <string name="change_image">Ganti Gambar</string>
     <string name="delete">Hapus</string>
     <string name="detail_product">Detail Produk</string>
+    <string name="choose_month">Pilih Bulan</string>
+    <string name="choose_year">Pilih Tahun</string>
+    <string name="export_pdf">Ekspor Laporan ke PDF</string>
+    <string name="export_csv">Ekspor Laporan ke Excel</string>
+    <string name="export_report">Ekspor Laporan</string>
 </resources>
