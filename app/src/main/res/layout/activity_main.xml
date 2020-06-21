@@ -71,12 +71,13 @@
             android:isScrollContainer="true"
             android:overScrollMode="ifContentScrolls"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/item_order"
-            app:reverseLayout="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:reverseLayout="true"
+            app:stackFromEnd="true"
+            tools:listitem="@layout/item_order" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
